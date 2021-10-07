@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.get.dia.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/toAgenda"
+            app:destination="@id/nav_agenda"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_enter_anim"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toHistorico"
+            app:destination="@id/nav_historico"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toTempo"
+            app:destination="@id/nav_tempo"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toTarefas"
+            app:destination="@id/nav_tarefas"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toQuestoes"
+            app:destination="@id/nav_questoes"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toTrabalhos"
+            app:destination="@id/nav_trabalhos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toIa"
+            app:destination="@id/nav_ia"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toSobre"
+            app:destination="@id/sobreFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toConfig"
+            app:destination="@id/fragmentConfiguracoes"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_feedBack"
+            app:destination="@id/feedBack"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_historico"
+        android:name="com.get.dia.ui.historicos.HistoricoFragment"
+        android:label="historico"
+        tools:layout="@layout/fragment_historico" />
+
+    <fragment
+        android:id="@+id/nav_tarefas"
+        android:name="com.get.dia.ui.tarefas.TarefasFragment"
+        android:label="tarefas"
+        tools:layout="@layout/fragment_tarefas" />
+
+    <fragment
+        android:id="@+id/nav_tempo"
+        android:name="com.get.dia.ui.tempo.TempoFragment"
+        android:label="Tempo"
+        tools:layout="@layout/fragment_tempo" />
+
+    <fragment
+        android:id="@+id/nav_questoes"
+        android:name="com.get.dia.ui.questoes.QuestoesFragment"
+        android:label="Questoes"
+        tools:layout="@layout/fragment_questoes" />
+
+    <fragment
+        android:id="@+id/nav_agenda"
+        android:name="com.get.dia.ui.agenda.AgendaFragment"
+        android:label="Agenda"
+        tools:layout="@layout/fragment_agenda" />
+    <fragment
+        android:id="@+id/nav_ia"
+        android:name="com.get.dia.ui.assistente.AssistenteFragment"
+        android:label="assistente"
+        tools:layout="@layout/fragment_assistente" />
+    <fragment
+        android:id="@+id/nav_trabalhos"
+        android:name="com.get.dia.ui.trabalhos.TrabalhosFragment"
+        android:label="trabalhos"
+        tools:layout="@layout/fragment_trabalhos" />
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="com.get.dia.ui.sobre.SobreFragment"
+        android:label="SobreFragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.google.com" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentConfiguracoes"
+        android:name="com.get.dia.ui.configuracoes.FragmentConfiguracoes"
+        android:label="FragmentConfiguracoes" />
+    <fragment
+        android:id="@+id/feedBack"
+        android:name="com.get.dia.ui.feedback.FeedBackFragment"
+        android:label="fragment_feed_back"
+        tools:layout="@layout/fragment_feed_back" />
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.get.dia.ui.scanner.ScannerFragment"
+        android:label="ScannerFragment" />
+</navigation>

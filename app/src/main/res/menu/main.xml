@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:iconTint="#000000"
+        android:title="Configurações"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:iconTint="#000000"
+        android:title="Sobre"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_feedBack"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:iconTint="#000000"
+        android:orderInCategory="100"
+        android:title="FeedBack"
+        app:showAsAction="never" />
+</menu>
+
+

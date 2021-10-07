@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_ia"
+        android:icon="@drawable/dia_png"
+        android:title="Assistente Pessoal" />
+
+    <item android:title="Utilitários">
+        <menu>
+            <item
+                android:id="@+id/nav_tarefas"
+                android:icon="@android:drawable/checkbox_on_background"
+                android:title="Tarefas" />
+            <item
+                android:id="@+id/nav_horario"
+                android:icon="@android:drawable/ic_menu_month"
+                android:title="Horário" />
+            <item
+                android:id="@+id/nav_agenda"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="Agenda" />
+            <item
+                android:id="@+id/nav_historico"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="Histórico" />
+            <item
+                android:id="@+id/nav_questoes"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="Questões" />
+        </menu>
+    </item>
+
+    <item android:title="Administração">
+        <menu>
+            <item
+                android:id="@+id/nav_conta"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="Conta" />
+            <item
+                android:id="@+id/nav_tempo"
+                android:icon="@android:drawable/ic_lock_idle_alarm"
+                android:title="Adm Tempo" />
+            <item
+                android:id="@+id/nav_Tarefas"
+                android:icon="@android:drawable/ic_menu_today"
+                android:title="Trabalhos" />
+        </menu>
+    </item>
+
+    <item android:title="O aplicativo">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:title="FeedBack" />
+            <item
+                android:id="@+id/nav_sobre"
+                android:title="Sobre" />
+            <item
+                android:id="@+id/nav_config"
+                android:title="Configurações" />
+        </menu>
+    </item>
+
+</menu>
